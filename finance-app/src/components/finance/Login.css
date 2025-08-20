@@ -1,0 +1,125 @@
+/* src/components/Login.css */
+
+.login-container {
+    display: flex;
+    height: 100vh;
+    /* Full viewport height */
+    font-family: 'Battambang';
+}
+
+h1,
+h2 {
+    color: black;
+}
+.logo-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-login {
+    /* Adjust the size of your logo as needed */
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.logohead {
+    font-size: 2.3rem;
+    color: #eac60b;
+}
+
+.login-form {
+    flex: 1;
+    background-color: white;
+    /* White side */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Center vertically */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-flex-form {
+    display: grid;
+    width: 100%;
+}
+
+.login-form-group {
+    justify-self: center;
+    display: flex;
+    /* Use flex for label and input */
+    flex-direction: column;
+    /* Stack label above input */
+    margin-bottom: 20px;
+    width: 60%;
+    padding: 5px 20px;
+    /* Space between fields */
+
+}
+
+.login-label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+    /* Space between label and input */
+    font-weight: bold;
+}
+
+.login-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    /* box-shadow: 10px solid rgb(61, 61, 61);  */
+}
+
+
+.login-submit {
+    padding: 10px 15px;
+    /* Add some padding */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    background-color: #eac60b;
+    /* Your preferred button color */
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+    /* Space between buttons */
+}
+
+.login-image {
+    flex: 1;
+    background-color: #1f665e;
+    /* Green side */
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-image img {
+    max-width: 100%;
+    height: 80%;
+}
+
+.form-actions {
+    justify-self: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 60%;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .login-container{
+        height: 82vh;
+    }
+    .login-form-group{
+        width: 80%;
+    }
+}

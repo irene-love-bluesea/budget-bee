@@ -1,0 +1,136 @@
+/* src/components/Navbar.css */
+/* #1f665e green
+    #eac60b yellow
+    #ffe662 hover
+ */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f665e;
+  color: white;
+  font-family: "Battambang";
+}
+
+.menu-c {
+  display: flex;
+  gap: 1px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-title {
+  color: #eac60b;
+  font-size: 1.8rem;
+}
+
+.navbar-logo-img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.btn-toggler {
+  border: none;
+}
+
+.toggler-icon {
+  color: #eac60b;
+  font-size: 1.8rem;
+}
+
+.offcanvas-navbar {
+  justify-content: space-between;
+}
+
+.close-icon {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+}
+
+.link:hover,
+.link:focus {
+  color: #eac60b;
+}
+
+.active {
+  color: #eac60b;
+}
+
+.currency {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.dropdown {
+  padding: 7px 12px;
+  border-radius: 5px;
+  color: #000000;
+  background-color: #eac60b;
+}
+
+.dropdown:hover {
+  background-color: #ffe662;
+}
+
+.dropdown-option {
+  color: #000;
+  background-color: #fff;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.navbar-profile-btn {
+  padding: 5px 10px;
+  background-color: #eac60b;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navbar-profile-btn:hover {
+  background-color: #ffe662;
+}
+
+.profile-icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.profile-link {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #000000 !important;
+}
+
+.offcanvas-show {
+  background-color: #1f665e;
+}

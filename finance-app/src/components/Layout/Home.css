@@ -1,0 +1,254 @@
+.home-container {
+  font-family: 'Battambang';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-p {
+  font-size: 1.3rem;
+}
+
+.banner {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.home-image img {
+  max-width: 60%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.home-description {
+  margin-left: 20px;
+  padding: 0px;
+  max-width: 45%;
+  font-size: 1.5rem;
+}
+
+.how1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.text {
+  margin-left: 20px;
+  max-width: 600px;
+  font-size: 1.4rem;
+}
+.text h2{
+  font-size: 1.9rem;
+}
+.howimage img {
+  max-width: 85%;
+  min-width: 55%;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid #333;
+  box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.4);
+}
+.text1 {
+  order: 1; /* Default order */
+}
+
+.image1{
+  order: 2; /* Default order */
+}
+
+.feedback-section-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  text-align: center;
+  padding: 20px;
+}
+
+.feedback-container {
+  display: flex;
+  gap: 10px;
+  overflow: hidden;
+  /* Hide scroll bar */
+  scroll-behavior: smooth;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  width: calc(320px * 3 + 25px);
+  /* Adjusted for card width and gap */
+  margin: 0 auto;
+}
+
+.feedback-card {
+  flex: 0 0 320px;
+  /* Ensure each card is 310px */
+  position: relative;
+  background-color: #ececec;
+  border-radius: 10px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+  padding-top: 20px;
+  /* Space for user photo */
+  text-align: center;
+  overflow: visible;
+
+  /* Allow overflow for user photo */
+}
+
+.user-photo {
+  position: absolute;
+  top: -30px;
+  /* Pull the photo up */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  /* Size of user photo */
+  height: 60px;
+  /* Size of user photo */
+  border-radius: 50%;
+  /* Circular image */
+  border: 3px solid #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-content {
+  padding: 20px;
+  /* Padding for feedback text */
+}
+.user-name {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+.feedback-message {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Arrows */
+.arrow {
+  position: absolute;
+  top: 45%;
+  background-color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 35px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left-arrow {
+  left: 30px;
+}
+
+.right-arrow {
+  right: 30px;
+}
+
+.arrow:disabled {
+  color: rgb(97, 96, 96);
+  cursor: not-allowed;
+}
+
+
+
+
+/*Responsive*/
+@media only screen and (max-width: 600px) {
+
+.banner{
+  min-height: 40vh;
+  max-width: 100vw;
+}
+.home-image{
+  width: 400px;
+  height: 250px;
+}
+.home-image img{
+  max-width: 300px;
+}
+.banner{
+  flex-direction: column;
+  min-height: 300px;
+  padding: 20px;
+}
+.home-description{
+  max-width: 95%;
+  margin-left: 0px;
+  padding: 0px 25px;
+}
+.text h2{
+  font-size: 1.6rem;
+}
+.home-p{
+  margin-top: 20px;
+  font-size: 1.2rem;
+  padding: 20px;
+}
+.how1{
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+.how1 .text{
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.text1 {
+  order: 2; /* Default order */
+}
+
+.image1{
+  order: 1; /* Default order */
+}
+
+.text p, .text h2{
+  margin: 15px 0px 0px 0px;
+}
+.feedback-section-wrapper {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback-container {
+  padding-top: 30px;
+  width: 80%;
+  gap: 0;
+  margin: 20px;
+}
+
+.feedback-card {
+  flex: 0 0 280px;
+  padding-top: 20px;
+  margin-left: 20px;
+}
+
+.user-photo {
+  
+  width: 60px;
+  height: 60px;
+}
+.left-arrow{
+  font-size: 30px;
+  left: 0;
+}
+.right-arrow{
+  font-size: 30px;
+  right: 0;
+}
+
+}
+
+@media screen and (max-width: 1300px) and (min-width: 602px){
+  .feedback-container{
+    width: 85%;
+  }
+}

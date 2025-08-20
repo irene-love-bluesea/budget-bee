@@ -1,0 +1,336 @@
+/* 
+--- 01 Typography system
+- Font Size(px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font Weight
+    Default 400
+
+- Line Height
+    Default 1 
+
+- spacing System
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+.budget-main {
+  padding: 20px;
+  margin: 0 50px;
+  box-sizing: border-box;
+  font-family: "Battambang";
+}
+
+.setBudget {
+  margin-top: 2rem;
+  text-align: start;
+}
+
+.budget-categories {
+  margin-top: 2rem;
+  max-width: 500px;
+}
+
+.category-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.category-item i {
+  font-size: 1.8rem;
+}
+.set-budget-btn {
+  border-color: #1f665e;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.set-budget-btn:hover {
+  background-color: #1f665e;
+}
+
+.budget-popup {
+  max-width: 500px;
+}
+
+.budget-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+.budget-form-title {
+  color: #1f665e;
+}
+
+.budget-form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.budget-cancel-btn {
+  border-color: #1f665e;
+  transition: all 0.5s ease;
+  width: 100px;
+}
+.budget-cancel-btn:hover {
+  background-color: #e7e7e7;
+}
+
+.set-btn {
+  color: #fff;
+  background-color: #eac60b;
+  width: 100px;
+  transition: all 0.5s ease;
+}
+
+.set-btn:hover {
+  color: #fff;
+  background-color: #ffe662;
+}
+
+.add-category {
+  display: flex;
+  max-width: 500px;
+  justify-content: center;
+}
+.add-category-btn {
+  color: #1f665e;
+  font-size: 1.2rem;
+  width: 200px;
+  transition: all 0.5s ease;
+}
+.add-category-btn:hover {
+  color: #fff;
+  background-color: #1f665e;
+}
+.set-budgeted {
+  text-align: start;
+  max-height: 1000px;
+}
+.no-budget {
+  font-size: 1.2rem;
+}
+
+.budgeted-lists {
+  list-style-type: none;
+}
+
+.budgeted-categories {
+  padding: 20px;
+}
+
+.budgeted-title {
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #1a6051;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.selected-icon {
+  font-size: 1.4rem;
+}
+
+.progress-bar {
+  height: 15px;
+  background-color: #eac60b;
+}
+
+.card-item {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-item:hover {
+  transform: scale(1.05); /* Slightly enlarges the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+}
+
+
+.saving-title {
+  text-align: start;
+}
+
+/* Circular progress container */
+.progress-circle {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.progress-circle svg {
+  transform: rotate(-90deg);
+}
+
+.progress-circle .progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Spacing and title */
+.saving-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-saving {
+  color: #fff;
+  background-color: #1f665e;
+}
+
+.btn-edit {
+  border: none;
+  color: #eac60b;
+  font-size: 20px;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.btn-edit:hover {
+  color: #ffe662;
+}
+
+.btn-trash {
+  border: none;
+  color: #f01e2c;
+  font-size: 20px;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  margin: 0;
+}
+
+.btn-trash:hover {
+  color: #c30010;
+}
+
+.progress-style{
+  width: 100px;
+  height: 100px;
+}
+/* Add New Category */
+
+.modal-content {
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Icon grid styles */
+.icon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px; /* Space between icons */
+}
+
+.icon-item {
+  width: 18%;
+  font-size: 2rem;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: color 0.3s ease;
+}
+
+.icon-item:hover,
+.active {
+  color: #eac60b;
+}
+
+.goal-list {
+  list-style-type: none;
+}
+
+@media (max-width: 991.98px) {
+  .category-item {
+    font-size: 1.2rem;
+  }
+
+  .category-item i {
+    font-size: 1.4rem;
+  }
+  .set-budget-btn {
+    font-size: 1rem;
+  }
+  .budget-popup {
+    max-width: 300px;
+  }
+
+  .budget-form {
+    font-weight: 400;
+  }
+
+  .budget-cancel-btn {
+    width: 80px;
+  }
+
+  .set-btn {
+    width: 80px;
+  }
+
+  .add-category-btn {
+    font-size: 1rem;
+    width: 180px;
+  }
+
+  .no-budget {
+    font-size: 1rem;
+  }
+
+  .budgeted-title {
+    font-size: 1rem;
+  }
+
+  .selected-icon {
+    font-size: 1rem;
+  }
+
+  .btn-edit {
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .btn-trash {
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .modal-content {
+    max-width: 300px;
+  }
+
+  .icon-item {
+    text-align: center;
+  }
+
+  .saving-name{
+    font-size: 1rem;
+  }
+  .progress-style{
+  width: 70px;
+  height: 70px;
+}
+
+.card-saving strong{
+  display: block;
+}
+
+}

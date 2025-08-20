@@ -1,0 +1,38 @@
+.footer{
+  color: white;
+  background-color: #1f665e; 
+  padding:10px;
+}
+.footer-h{
+  font-size: 1.7rem;
+  color: #eac60b;
+}
+.logo-section-foot{
+  display:flex;
+  align-items: center;   
+  justify-content: center; 
+}
+.footer-head{
+  color:white;
+}
+.social-icons {
+  margin-top:20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px; 
+}
+.social-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:20px;
+}
+.links{
+  padding: 20px 0px;
+  display: flex;
+  gap: 30px;
+}
+.links a{
+  color: white;
+  text-decoration-line: none;
+}
